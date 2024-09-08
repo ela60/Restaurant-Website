@@ -1,0 +1,323 @@
+@media (max-width: 576px){
+    
+
+/* responsive nav bar */
+
+.navbar {
+    
+    flex-direction: column;
+    
+    padding: 10px 20px; 
+    height: auto; 
+}
+
+
+/* Logo Styles */
+.logo {
+    font-size: 1.2em; 
+    margin-left:16px;
+    margin-bottom: 5px; 
+    width: 100%; /* Make logo take full width */
+}
+
+/* List Container Styles */
+
+.list{
+    display: none;
+}
+
+.navbar1{
+    display: none;
+}
+
+
+
+/* Hide navbar1 and show hamburger menu */
+
+.hamburger-menu-mobile {
+    display: block; 
+    font-size: 26px;
+    color: #4AC87E;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: -30px;    
+    margin-right: 20px;
+}
+.hamburger-menu-medium {
+    display: none; 
+}
+
+/* responsive banner */
+.banner{
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.banner-left {
+    margin-left: 0;
+       
+}
+.banner-left {
+    margin-left: 20px;
+}
+
+.banner-text {
+    margin-left: 0;
+    text-align: center; 
+}
+
+.banner-text > h1 {
+    font-size: 24px; 
+    line-height: 1.8rem; 
+}
+
+.banner-left p {
+    font-size: 14px; 
+    margin-top: 10px;
+    line-height: 1.4rem; 
+}
+
+.banner-video {
+    flex-direction: column; 
+    gap: 10px; 
+}
+
+.banner-video p {
+    font-size: 14px; 
+}
+
+.order-now-button {
+    padding: 10px 20px; 
+    font-size: 14px; 
+}
+
+.icon-style {
+    padding: 8px 10px; /* Adjust padding */
+    font-size: 20px; /* Reduce icon size */
+}
+.banner-right svg {
+    margin-right: 20px; 
+    width: 100%; 
+    height: auto; 
+    max-width: 300px; 
+    margin-top: 20px; 
+}
+.card-grid {
+    padding: 15px 10px; 
+    gap: 15px;         
+}
+
+.card-popular {
+    width: 100%;        /* Full width for each card */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Slightly lighter shadow for smaller screens */
+    border-radius: 15px; /* Slightly smaller border radius */
+}
+
+.card-popular svg {
+    width: 100px;       /* Adjust size of the SVG icon */
+    height: 100px;      /* Adjust size of the SVG icon */
+    margin-left: auto;  /* Center align SVG */
+    margin-right: auto; /* Center align SVG */
+    margin-bottom: 10px; /* Maintain some spacing at the bottom */
+}
+
+.card-popular h4 {
+    font-size: 18px;    /* Adjust font size for smaller screens */
+}
+
+.card-popular p {
+    font-size: 14px;    /* Adjust font size for smaller screens */
+}
+
+/* standOut mobile device */
+.standOut {
+    padding: 20px 10px; /* Reduce horizontal padding for smaller screens */
+}
+
+.stand-h2 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    text-align: center; /* Center align text */
+}
+
+.stand-svg {
+  
+    margin-left: 0; 
+    top: 7px; 
+    bottom: 8px;
+    gap: 15px;
+}
+.card-container {
+    flex-direction: column;
+    
+    gap: 20px; 
+   
+}
+.card{
+    width: 100%;
+}
+
+
+
+
+/* testimonial responsive  */
+.testimonial{
+   display: none;
+}
+
+
+.relative-example h4 {
+    position: static; /* Reset position for responsive layout */
+    font-size: 18px; /* Adjust font size */
+    width: 100%; /* Full width on smaller screens */
+    text-align: center; /* Center text */
+    margin: 0 auto; /* Center horizontally */
+    top: auto; /* Reset top position */
+    left: auto; /* Reset left position */
+}
+
+.right-testimonial {
+    margin-top: 30px; /* Adjust margin-top */
+    margin-left: 0; /* Reset left margin */
+}
+
+.right-testimonial h3 {
+    margin-top: 10px; /* Adjust margin-top */
+}
+
+.testi-h1 {
+    font-size: 24px; /* Adjust font size */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Adjust padding */
+}
+
+.testi-p {
+    font-size: 14px; /* Adjust font size */
+    text-align: center; /* Center text */
+}
+
+.double-text h5 {
+    margin-left: 0; /* Reset left margin */
+    margin-top: 10px; /* Adjust margin-top */
+    font-size: 16px; /* Adjust font size */
+    text-align: center; /* Center text */
+}
+
+.group-img img {
+    margin-top: 20px; /* Adjust margin-top */
+    width: 100px; /* Adjust width */
+    display: block; /* Ensure image is displayed as block */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+.double-rate {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 20px; /* Adjust margin-top */
+    margin-left: 0; /* Reset left margin */
+}
+
+.review {
+    margin-top: 10px; /* Adjust margin-top */
+    margin-right: 0; /* Reset right margin */
+    color: #807E7E;
+    text-align: center; /* Center text */
+}
+/* OUR CULinary journey responsive */
+.flex-section {
+    flex-direction: column; /* Stack items vertically */
+    padding: 0px 0px; /* Adjust padding for smaller screens */
+    margin-top: 0; /* Reset top margin */
+    margin-bottom: 20px; /* Adjust bottom margin */
+}
+.story-container {
+    grid-template-columns: 1fr; /* Stack items vertically */
+    gap: 20px; /* Adjust gap for smaller screens */
+    padding: 0 15px; /* Add horizontal padding to the container */
+}
+
+.story-card {
+
+    padding: 15px; /* Adjust padding for smaller screens */
+}
+
+/* footer section responsive */
+.footer-content {
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.nav-link {
+    font-size: 14px;
+}
+
+.footer-section {
+    padding: 30px 20px; 
+}
+
+.logo1 {
+    margin-bottom: 20px; 
+}
+
+.hr-p {
+    font-size: 12px;
+    margin-right: 0; 
+    margin-top: 10px; 
+}
+.started {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center;
+}
+
+.footer-info {
+    margin-left: 0;
+    text-align: center; 
+}
+
+.footer-info > h1 {
+    font-size: 20px; 
+}
+
+.footer-info > p {
+    margin-top: 20px;
+    font-size: 14px; 
+}
+
+.options {
+    font-size: 18px; 
+    margin-right: 0;
+    gap: 1rem; 
+}
+
+.footer-links {
+    flex-direction: column; 
+    align-items: center;
+}
+
+.get-started {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0 0px;
+}
+
+.h5-footer {
+    margin-left: 0;
+    padding: 15px;
+    font-size: 1.2em; 
+}
+
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.icon-container, .other-social {
+    width: 30px;
+    height: 30px;
+    font-size: 14px; 
+    
+}
+}

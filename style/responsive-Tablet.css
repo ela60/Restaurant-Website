@@ -1,0 +1,10 @@
+/* Responsive styles for tablets (up to 768px) */
+@media (min-width: 577px ) and (max-width:768px) {
+
+    .hamburger-menu-mobile {
+        display: none; 
+    }
+
+
+
+}

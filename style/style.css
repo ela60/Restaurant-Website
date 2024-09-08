@@ -312,7 +312,7 @@ span{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;         
-    gap: 20px;                /* Space between cards */
+    gap: 20px;                
     padding: 15px 120px; 
 }
 
@@ -369,6 +369,41 @@ span{
     gap: 25px; 
     
 }
+
+.icon-left {
+    position: relative;
+    color: rgb(5, 5, 5);
+    font-size: 16px;
+     display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 50px; 
+        height: 50px; 
+        border-radius: 50%; 
+        background-color: #efefeff2; 
+        color: #6F6E6E;
+        font-size: 20px; 
+        text-align: center;
+    }
+.icon-right {
+    position: relative;
+
+    font-size: 16px;
+     display: flex;
+        justify-content: center; 
+        align-items: center; 
+        width: 50px; 
+        height: 50px; 
+        border-radius: 50%; 
+        background-color: #39DB4A; 
+        color: white;
+        font-size: 20px; 
+        text-align: center;
+    }
+    
+    
+
+
 
 /* Optional: Adjust size and appearance of SVG icons */
 .icon-svg {
@@ -480,30 +515,82 @@ span{
     font-size: 24px;        
     color: white;           
 }
-/* TEstimonial */
+/* TEstimonial section style */
 .testimonial{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 140px;
+    padding: 0 180px;
+    margin-top: 30px;
+}
+.left-testimonial{
+    background-image: url('../image/Rectangle\ 37.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 130px;
+    width:280px ;
+    padding: 0 ;
+}
+.left-testimonial img{
+    position: relative;
+    top:-104px;
+    width: 300px;
+    height:310px ;
+}
+.rectangle{
+    position: relative;
+    top:270px;
+    left:-270px;
+   
+}
+ /* Using Relative Positioning */
+ .relative-example h4 {
+    position: relative;
+    top: 325px;
+    left: -630px;
+    font-size: 24px;
+    width: 150px;
+    color: #202020;
 }
 .right-testimonial{
-   margin-top: 70px; 
+   margin-top: 120px; 
+   margin-left: -500px;
+}
+.right-testimonial h3{
+   margin-top: -80px; 
+   
 }
 .testi-h1{
     font-size: 32px;
     font-weight: bold;
     padding: 15px 0;
     
+    
 }
 .testi-p{
     color: #555555;
     line-height: 1.3rem;
 }
+.double-text h5{
+    margin-left: 150px;
+    margin-top: -50px;
+    font-size: 18px;
+}
+.group-img img{
+    margin-top: 50px;
+    width: 120px;
+}
 
 .double-rate{
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-left: -80px;
+}
+.review{
+    margin-top: -15px;
+    margin-right: 35px;
+    color: #807E7E;
 }
 
 
@@ -515,7 +602,8 @@ span{
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px 90px;
-    margin-top: -150px;
+    margin-top: -40px;
+    margin-bottom: 40px;
     
    
 }
