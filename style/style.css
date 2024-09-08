@@ -309,40 +309,41 @@ span{
     
 }
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    
-}
-
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    transition: transform 0.2s ease;
+    justify-content: space-between;
+    flex-wrap: wrap;         
+    gap: 20px;                /* Space between cards */
+    padding: 15px 120px; 
 }
 
-.card-img img {
-    width: 100%;
-    height: auto;
+.card-popular {
+    background-color: #fff;
+    border: .1px solid white;  
+    border-radius: 25px;       
+    box-shadow: 0 2px 5px rgba(0.1,0,0.1,0.3); 
+    padding: 15px;           
+    text-align: center;       
+    width: 23%; 
+}
+
+.card-popular svg {
+    width: 150px;
+    height: 150px;
     display: block;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    background-color: #C1F1C6;    
+    border-radius: 50%;
 }
-
-.card-text {
-    padding: 15px;
-    flex: 1;
-}
-
-.card-text h4 {
+.card-popular h4 {
     margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #1E1E1E;
 }
 
-.card-text p {
+.card-popular p {
     margin: 0;
-    color: #666;
+    color: #555555;
 }
 
 
@@ -416,7 +417,7 @@ span{
    height: 180px;
    margin-top: 30px;
    margin-left: 66px;
-   border: 2px solid skyblue;
+  
     border-radius: 50%; 
     display: block;
 }
@@ -500,6 +501,11 @@ span{
     line-height: 1.3rem;
 }
 
+.double-rate{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* Our Culinary Journey And Services */
 
@@ -518,14 +524,19 @@ span{
     font-weight: 600;
 }
 .left-storyp{
+    line-height: 1.5rem;
     color: #555555;
 }
 .left-side {
     flex: 1;
-    margin-top: 100px;
+    margin-top: 180px;
     margin-left: 50px;
     padding: 20px;
    
+}
+.left-side h1 {
+    font-size: 32px;
+    font-weight: bold;
 }
 .right-side {
     flex: 1;
@@ -570,14 +581,11 @@ span{
     color: #90BD95;
 }
 
-
-
-
 /* footer get started part */
 .footer-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 .nav-link {
     text-decoration: none;
@@ -586,13 +594,19 @@ span{
 }
 
 .footer-section {
-    margin-top: 180px;
-    padding: 50px 0px 50px 100px;
+    padding: 60px 70px 0 110px;
    
+}
+.logo1{
+    position: relative;
+   font-weight: 900;
+    display: flex;
+    align-items: center; 
 }
 
 .hr-p {
-    margin-left: 50px;
+   margin-right: 430px;
+   margin-top: -12px;
     color: #555555;
 }
 
@@ -609,7 +623,7 @@ span{
 }
 .footer-info>p{
     margin-top: 30px;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     color: #555555;
 }
 
@@ -623,17 +637,20 @@ span{
 }
 
 .footer-links {
-    margin-top: 7px;
+    margin-top: px;
     display: flex;
-    margin-right: 50px;
+    
 }
 
 .get-started {
-    padding: 0;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    padding: 0  40px;
+   
 }
 
 .h5-footer {
-    margin-left:-24px ;
+    margin-left:-20px ;
     padding: 20px;
     font-size: 1.5em;
     color:#000000;
@@ -652,27 +669,55 @@ span{
     justify-content: space-between;
     align-items: center; 
     max-width: 1200px;
-    margin: 0 auto; 
+    padding:  30px 0; 
+    margin-top: -10px;
 }
 
-/* Footer Text */
-.footer-text {
-    flex: 1;
-}
 
 /* Social Media Icons */
 .footer-social {
     flex-shrink: 0;
-    color: #4AC87E;
-    margin-right: 150px;
+    color: none;
+   margin-left: 40px;
 }
 
-.social-icon {
-    font-size: 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: color 0.3s;
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px; 
+    height: 35px; 
+    background-color: #39DB4A; 
+    border-radius: 50%;
+    margin-bottom: 10px; 
 }
+.other-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px; 
+    height: 35px; 
+    background-color: #c3eec7; 
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+}
+
+.icon-container i {
+    color: white; 
+    font-size: 16px; 
+}
+
+.footer-social {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    padding: 10px; 
+}
+
+
+
 
 
 
