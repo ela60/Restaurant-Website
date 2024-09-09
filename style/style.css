@@ -151,7 +151,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px ;
+    padding: 10px 20px 90px 20px ;
+    
 }
 
 .banner-left, .banner-right {
@@ -193,13 +194,15 @@ span{
     margin: 0;
     font-weight: 600;
     font-size: 16px; 
-    color: #4D4D4D; 
+    color: #4D4D4D;
+     
 }
 .order-now-button {
     background-color: #39DB4A; 
     color: white; 
     border: none; 
     border-radius: 25px;
+    box-shadow: -2px 22px 38px 0px rgba(142, 255, 154, 0.5);
     padding: 12px 24px;
     font-size: 16px;
     font-weight: bold;
@@ -209,7 +212,8 @@ span{
 .icon-style {
     background-color: white;
     border: 2px solid #39DB4A; 
-    border-radius: 50%; 
+    border-radius: 50%;
+    box-shadow: -2px 22px 38px 0px rgba(142, 255, 154, 0.5); 
     padding: 10px 13px; 
     font-size: 24px; 
     color: #39DB4A; 
@@ -229,67 +233,95 @@ span{
 }
 
 /* banner box */
-.container {
-    position: relative;
-    width: 100%; /* Adjust width as needed */
-    height: 400px; /* Adjust height as needed */
-    border: 1px solid #ddd; /* Optional: border for container */
-    overflow: hidden; /* Hide overflow */
-}
 
+/* Card Container */
 .box-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 250px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 7px 35px 51px 0px rgba(0, 0, 0, 0.14);
+    overflow: hidden;
+    padding: 0px 0;
+    right: 480px;
+    margin-top: 220px;
+    box-sizing: border-box;
+    cursor: move;
     position: absolute;
-    bottom: 0; /* Align to the bottom of .banner-right */
-    left: 50px;   /* Align to the left of .banner-right */
-    width: 300px; /* Adjust width as needed */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-   
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    cursor: move; /* Indicate draggable item */
+    z-index: 1000; 
+}
+.box-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 250px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 7px 35px 51px 0px rgba(0, 0, 0, 0.14);
+    overflow: hidden;
+    padding: 0px 0;
+    right: 200px;
+    margin-top: 220px;
+    box-sizing: border-box;
+    cursor: move;
+    position: absolute;
+    z-index: 1000; 
 }
 
+/* Image Container */
 .img-box {
-    flex: 1;
+    flex-shrink: 0;
+    width: 40%;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-box img {
-    width: 100%;
-    height: auto;
-    display: block;
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 25px;
 }
 
+/* Text Container */
 .text-box {
-    flex: 2;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-grow: 1;
+    padding-left: 20px;
 }
 
 .text-box h4 {
-    margin: 0 0 10px 0;
+    margin: 0 0 5px;
+    font-size: .85rem;
+    color: #333;
 }
 
-.rating {
+.box-rating {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-.filled {
-    color: #FFD700;
+.box-rating i {
+    color: gold;
+    margin-right: 4px;
 }
 
-.empty {
-    color: #d3d3d3;
+.box-rating i.empty {
+    color: #ddd; 
 }
 
 .text-box p {
     margin: 0;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    color: #555;
 }
-
-
 /* Popular Catagories */
 .first-card{
     margin-top: 50px;
@@ -347,9 +379,6 @@ span{
 }
 
 
-
-
-
 /* Standout Dishes From Our Menu */
 .standOut{
     padding: 20px 150px;
@@ -400,24 +429,6 @@ span{
         font-size: 20px; 
         text-align: center;
     }
-    
-    
-
-
-
-/* Optional: Adjust size and appearance of SVG icons */
-.icon-svg {
-    width: 40px; 
-     height: 40px; 
-     position: relative;  
-         
-}
-
-/* Style for the black icon */
-.black-icon circle {
-    fill: #EFEFEF;
-    
-}
 
 
 /* last rating part */
