@@ -400,8 +400,8 @@ span{
 }
 
 .icon-left {
-    position: relative;
-    color: rgb(5, 5, 5);
+    position: static;
+    
     font-size: 16px;
      display: flex;
         justify-content: center; 
@@ -412,11 +412,14 @@ span{
         background-color: #efefeff2; 
         color: #6F6E6E;
         font-size: 20px; 
+       
+    }
+    .icon-left i{
+        color: rgb(5, 5, 5);
         text-align: center;
     }
 .icon-right {
     position: relative;
-
     font-size: 16px;
      display: flex;
         justify-content: center; 
@@ -425,9 +428,14 @@ span{
         height: 50px; 
         border-radius: 50%; 
         background-color: #39DB4A; 
-        color: white;
+       
         font-size: 20px; 
+       
+    }
+    .icon-right i{
+        color: white;
         text-align: center;
+
     }
 
 
@@ -471,14 +479,18 @@ span{
 .card-inside {
     padding: 15px;
     margin-left: 15px;
+  
 }
+
 .rating {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 230px;
     margin-top: -15px;
+    
     position: relative;
+    
 }
 .rating-h5{
     margin-left: 29px;
@@ -502,8 +514,8 @@ span{
     align-items: center;     
     width: 60px;            
     height: 75px; 
-    margin-left: 255px;
-    margin-top: -323px;
+    margin-left: 273px;
+    margin-top: -310px;
              
 }
 .leaf1 {
@@ -513,8 +525,8 @@ span{
     align-items: center;     
     width: 60px;            
     height: 70px; 
-    margin-left: 944px;
-    margin-top: -340px;
+    margin-left: 990px;
+    margin-top: -330px;
              
 }
 
